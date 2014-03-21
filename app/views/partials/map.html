@@ -2,6 +2,18 @@
 
 <div class="row">
   <div class="col-sm-12">
-    <h1>This is your map, {{mapdata.name}}!</h1>
+    <h1>This is your map, my man</h1>
+    <google-map
+      center="map.center"
+      zoom="map.zoom"
+      draggable="true"
+      pan="true"
+    >
+      <markers
+        models="map.markers"
+        coords="'self'"
+        fit="true"
+      ></markers>
+    </google-map>
   </div>
 </div>
