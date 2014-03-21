@@ -13,7 +13,12 @@
         models="map.markers"
         coords="'self'"
         fit="true"
-      ></markers>
+        labelContent="'title'"
+      >
+        <windows show="'showWindow'" ng-cloak>
+          <p ng-non-bindable>{{title}}</p>
+        </windows>
+      </markers>
     </google-map>
   </div>
 </div>
