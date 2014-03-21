@@ -2,22 +2,24 @@
 
 <div class="row">
   <div class="col-sm-12">
-    <h1>Commands</h1>
-  </div>
-  <div class="col-sm-12">
+    <h1> Commands </h1>
+
     <table class="table">
       <thead>
         <tr>
+          <th>Date</th>
           <th>Action</th>
           <th>Keyphrase</th>
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="item in commands">
-          <td>{{item.action}}</td>
-          <td>{{item.keyphrase}}</td>
+        <tr data-ng-repeat="item in commands | orderBy:'timestamp'">
+          <td>{{ item.timestamp }}</td>
+          <td>{{ item.action }}</td>
+          <td>{{ item.keyphrase }}</td>
         </tr>
       </tbody>
     </table>
+
   </div>
 </div>

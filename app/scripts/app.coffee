@@ -22,6 +22,7 @@ angular.module('nenokApp', [
       .when '/commands',
         templateUrl: 'partials/commands'
         controller: 'CommandsCtrl'
+        authenticate: true
       .when '/settings',
         templateUrl: 'partials/settings'
         controller: 'SettingsCtrl'
