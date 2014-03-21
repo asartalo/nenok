@@ -3,7 +3,8 @@
 var express = require('express'),
     path = require('path'),
     fs = require('fs'),
-    mongoose = require('mongoose');
+    mongoose = require('mongoose'),
+    newrelic = require('newrelic');
 
 /**
  * Main application file
@@ -28,7 +29,7 @@ fs.readdirSync(modelsPath).forEach(function (file) {
 
 // Populate empty DB with sample data
 require('./lib/config/dummydata');
-  
+
 // Passport Configuration
 var passport = require('./lib/config/passport');
 

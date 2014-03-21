@@ -10,7 +10,8 @@
     "passport-local": "~0.1.6",
     "ejs": "~0.8.4",
     "sha3": "",
-    "coffee-script": ""
+    "coffee-script": "",
+    "newrelic": "^1.4.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
