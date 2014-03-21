@@ -19,6 +19,9 @@ angular.module('nenokApp', [
       .when '/signup',
         templateUrl: 'partials/signup'
         controller: 'SignupCtrl'
+      .when '/commands',
+        templateUrl: 'partials/commands'
+        controller: 'CommandsCtrl'
       .when '/settings',
         templateUrl: 'partials/settings'
         controller: 'SettingsCtrl'

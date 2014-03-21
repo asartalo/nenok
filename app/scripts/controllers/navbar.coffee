@@ -9,6 +9,9 @@ angular.module('nenokApp')
       title: 'Settings'
       link: '/settings'
     ,
+      title: 'Commands'
+      link: '/commands'
+    ,
       title: 'Map'
       link: '/map'
     ,
