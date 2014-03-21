@@ -3,8 +3,19 @@
 <div class="row">
   <div class="col-sm-12">
     <h1> Phone Number History </h1>
-    <p data-ng-repeat="number in numbers | orderBy:'timestamp'">
-      {{number.value}} - {{number.timestamp}}
-    </p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-ng-repeat="number in numbers | orderBy:'timestamp'">
+          <td>{{ number.timestamp}}</td>
+          <td>{{ number.value}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
