@@ -27,14 +27,18 @@ angular.module('nenokApp', [
         templateUrl: 'partials/settings'
         controller: 'SettingsCtrl'
         authenticate: true
-      .when '/map',
-        templateUrl: 'partials/map'
-        controller: 'MapCtrl'
+      .when '/tracking',
+        templateUrl: 'partials/tracking'
+        controller: 'TrackingCtrl'
         authenticate: true
-     .when '/numbers',
-        templateUrl: 'partials/numbers'
-        controller: 'NumbersCtrl'
-        authenticate: true
+      # .when '/map',
+      #   templateUrl: 'partials/map'
+      #   controller: 'MapCtrl'
+      #   authenticate: true
+      # .when '/numbers',
+      #   templateUrl: 'partials/numbers'
+      #   controller: 'NumbersCtrl'
+      #   authenticate: true
       .otherwise
         redirectTo: '/'
 
