@@ -13,10 +13,9 @@
         models="map.markers"
         coords="'self'"
         fit="true"
-        labelContent="'timestamp'"
       >
         <windows show="'showWindow'" ng-cloak>
-          <p ng-non-bindable>{{timestamp}}</p>
+          <p ng-non-bindable>{{ timestamp | formatDate }}</p>
         </windows>
       </markers>
     </google-map>

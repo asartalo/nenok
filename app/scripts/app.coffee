@@ -5,7 +5,8 @@ angular.module('nenokApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'google-maps'
+  'google-maps',
+  'nenokFilters'
 ])
   .config ($routeProvider, $locationProvider, $httpProvider) ->
     $routeProvider
