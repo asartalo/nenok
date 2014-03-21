@@ -5,14 +5,17 @@ angular.module('nenokApp')
     $scope.menu = [
       title: 'Home'
       link: '/'
-    , 
+    ,
       title: 'Settings'
       link: '/settings'
+    ,
+      title: 'Map'
+      link: '/map'
     ]
-    
+
     $scope.logout = ->
       Auth.logout().then ->
         $location.path "/login"
-    
+
     $scope.isActive = (route) ->
       route is $location.path()
