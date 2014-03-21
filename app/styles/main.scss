@@ -93,3 +93,23 @@ body {
 
 /* Maps ... */
 .angular-google-map-container { height: 400px }
+
+/* branding */
+.branding {
+  text-align: center;
+  margin: 0 0 60px;
+
+  img {
+    width: 300px;
+    max-width: 100%;
+  }
+
+  h2 {
+    margin-top: 30px;
+  }
+}
+
+.top-branding {
+  font-family: "Montserrat Alternates", sans-serif;
+  text-transform: uppercase;
+}
