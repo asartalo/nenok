@@ -3,8 +3,9 @@
 angular.module('nenokApp')
   .controller 'MapCtrl',
     [
-      '$scope',
-      ($scope) ->
+      '$scope', 'currentUser'
+      ($scope, user) ->
+        console.log user
         $scope.map =
           center:
             longitude: 121.058121

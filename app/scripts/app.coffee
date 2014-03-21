@@ -26,6 +26,7 @@ angular.module('nenokApp', [
       .when '/map',
         templateUrl: 'partials/map'
         controller: 'MapCtrl'
+        authenticate: true
       .otherwise
         redirectTo: '/'
 
