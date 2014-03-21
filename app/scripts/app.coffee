@@ -12,7 +12,6 @@ angular.module('nenokApp', [
       .when '/',
         templateUrl: 'partials/main'
         controller: 'MainCtrl'
-
       .when '/login',
         templateUrl: 'partials/login'
         controller: 'LoginCtrl'
@@ -26,6 +25,10 @@ angular.module('nenokApp', [
       .when '/map',
         templateUrl: 'partials/map'
         controller: 'MapCtrl'
+        authenticate: true
+     .when '/numbers',
+        templateUrl: 'partials/numbers'
+        controller: 'NumbersCtrl'
         authenticate: true
       .otherwise
         redirectTo: '/'

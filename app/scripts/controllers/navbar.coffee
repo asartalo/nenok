@@ -11,6 +11,9 @@ angular.module('nenokApp')
     ,
       title: 'Map'
       link: '/map'
+    ,
+      title: "Phone Numbers"
+      link: "/numbers"
     ]
 
     $scope.logout = ->
