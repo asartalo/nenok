@@ -3,24 +3,12 @@
 angular.module('nenokApp')
   .controller 'MapCtrl',
     [
-      '$scope', 'currentUser'
-      ($scope, user) ->
-        console.log user
+      '$scope', 'Gps'
+      ($scope, Gps) ->
         $scope.map =
           center:
             longitude: 121.058121
             latitude: 14.5915003
-
-          markers: [
-              longitude: 121.058121
-              latitude: 14.5915003
-              title: 'Marker 1'
-              showWindow: false
-            ,
-              longitude: 121.078121
-              latitude: 14.6215003
-              title: 'Marker 2'
-              showWindow: false
-          ],
+          markers: Gps.get()
           zoom: 12
     ]
