@@ -8,6 +8,7 @@
       zoom="map.zoom"
       draggable="true"
       pan="true"
+      ng-if="map"
     >
       <markers
         models="map.markers"
@@ -18,7 +19,7 @@
           <p ng-non-bindable>{{ timestamp | formatDate }}</p>
         </windows>
       </markers>
-      <polyline path="map.path"
+      <polyline path="map.markers"
         stroke="{color: '#6060FB', weight: 3}"
         geodesic="false"
         fit="false"
