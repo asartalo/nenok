@@ -109,7 +109,17 @@ body {
   }
 }
 
-.top-branding {
+.top-branding a {
   font-family: "Montserrat Alternates", sans-serif;
   text-transform: uppercase;
+  color: black;
+}
+
+.top-branding a:hover {
+  text-decoration: none;
+}
+
+.panel {
+  .page-header { margin: 10px 0 20px; }
+  li { margin: 5px 0px; }
 }
