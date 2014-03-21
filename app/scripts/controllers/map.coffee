@@ -11,4 +11,5 @@ angular.module('nenokApp')
             latitude: 14.5915003
           markers: Gps.get()
           zoom: 12
+          path: Gps.get()
     ]

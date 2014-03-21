@@ -18,6 +18,15 @@
           <p ng-non-bindable>{{ timestamp | formatDate }}</p>
         </windows>
       </markers>
+      <polyline path="map.path"
+        stroke="{color: '#6060FB', weight: 3}"
+        geodesic="false"
+        fit="false"
+        visible="true"
+      >
+      </polygon>
+
     </google-map>
+    {{map.markers}}
   </div>
 </div>
