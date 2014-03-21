@@ -1,0 +1,10 @@
+<div ng-include="'partials/navbar.html'"></div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <h1> Phone Number History </h1>
+    <p data-ng-repeat="number in numbers | orderBy:'timestamp'">
+      {{number.value}} - {{number.timestamp}}
+    </p>
+  </div>
+</div>
