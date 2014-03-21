@@ -2,7 +2,7 @@
 
 <div class="row">
   <div class="col-sm-12">
-    <h1>This is your map, my man</h1>
+    <h1>Phone Locations</h1>
     <google-map
       center="map.center"
       zoom="map.zoom"
@@ -15,6 +15,7 @@
         fit="true"
         labelContent="'title'"
       >
+        <marker-label content="m.title" anchor="22 0" class="marker-labels" />
         <windows show="'showWindow'" ng-cloak>
           <p ng-non-bindable>{{title}}</p>
         </windows>
