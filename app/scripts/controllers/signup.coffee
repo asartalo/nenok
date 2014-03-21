@@ -22,6 +22,7 @@ angular.module('nenokApp')
           
           # Update validity of form fields that match the mongoose errors
           angular.forEach err.errors, (error, field) ->
+            if field == "hashedPassword" then field = "password"
             form[field].$setValidity 'mongoose', false
-            $scope.errors[field] = error.type
+            $scope.errors[field] = error.message
         )
